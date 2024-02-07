@@ -101,39 +101,56 @@
 	height: 92%;
 }
 
-#imgTxt{
-	position: absolute;
-	display: table;
-	vertical-align: middle;
-	top: 20%;
-	left: 0;
-	right: 0;
-	margin: auto;
-	width: 100%;
-	height: 50%;
+#imgTxt {
+    position: absolute;
+    display: table;
+    vertical-align: middle;
+    top: 20%; /* Điều chỉnh vị trí top cho phù hợp */
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 50%;
+    z-index: 1; /* Đảm bảo phần tử chữ hiển thị trên phần tử ảnh */
 }
 
-#img{
-	display: block;
-	left: 0;
-	right: 0;
-	margin: auto;
-	width: auto;
-	height: 100%;
+#img {
+    position: absolute;
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1; /* Đảm bảo phần tử ảnh ở phía dưới */
 }
 
-#Txt{
-	display: inline-block;
-	font-size: 17px;
-	width: 100%;
-	text-align: center;
+#Txt {
+    position: absolute;
+    display: table;
+    vertical-align: middle;
+    top: 20%; /* Adjust top position as needed */
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 50%;
+    z-index: 2; /* Ensure text appears above the image */
 	color: white;
 }
 
-#tmp{
-	display: inline-block;
-	font-size: 17px;
-	width: 100%;
-	text-align: center;
+#tmp {
+    position: absolute;
+    display: table;
+    vertical-align: middle;
+    top: 30%; /* Adjust top position as needed */
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 50%;
+    z-index: 2; /* Ensure text appears above the image */
 	color: white;
 }
